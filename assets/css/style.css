@@ -640,3 +640,37 @@ section {
 .contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
   border-color: #1a91ce;
 }
+
+
+
+.contact .php-email-form button[type="submit"] {
+  background: #3498db;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.contact .php-email-form button[type="submit"]:hover {
+  background: #2383c4;
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
