@@ -1,704 +1,207 @@
-/
-body {
-  font-family: "Open Sans", sans-serif;
-  color: #444444;
-}
-
-a {
-  color: #1a91ce;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #1a91ce;
-  text-decoration: none;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
-}
-
-/
-.back-to-top {
-  position: fixed;
-  visibility: hidden;
-  opacity: 0;
-  right: 15px;
-  bottom: 15px;
-  z-index: 996;
-  background: #1a91ce;
-  width: 40px;
-  height: 40px;
-  border-radius: 4px;
-  transition: all 0.4s;
-}
-
-.back-to-top i {
-  font-size: 28px;
-  color: #fff;
-  line-height: 0;
-}
-
-.back-to-top:hover {
-  background: #353535;
-  color: #1a91ce;
-}
-
-.back-to-top.active {
-  visibility: visible;
-  opacity: 1;
-}
-
-/
-.navbar {
-  padding: 0;
-}
-
-.navbar ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  list-style: none;
-  align-items: center;
-}
-
-.navbar li {
-  position: relative;
-}
-
-.navbar a {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 0 10px 30px;
-  font-size: 15px;
-  font-weight: 400;
-  color: #555555;
-  white-space: nowrap;
-  transition: 0.3s;
-}
-
-.navbar a i {
-  font-size: 12px;
-  line-height: 0;
-  margin-left: 5px;
-}
-
-.navbar a:hover, .navbar .active, .navbar li:hover > a {
-  color: #1a91ce;
-}
-
-.navbar .getstarted {
-  background: #1a91ce;
-  padding: 8px 25px;
-  margin-left: 30px;
-  border-radius: 50px;
-  color: #1a91ce;
-}
-
-.navbar .getstarted:hover {
-  color: #1a91ce;
-  background: #353535;
-}
-
-.navbar .dropdown ul {
-  display: block;
-  position: absolute;
-  left: 30px;
-  top: calc(100% + 30px);
-  margin: 0;
-  padding: 10px 0;
-  z-index: 99;
-  opacity: 0;
-  visibility: hidden;
-  background: #1a91ce;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-  transition: 0.3s;
-  border-radius: 4px;
-}
-
-.navbar .dropdown ul li {
-  min-width: 200px;
-}
-
-.navbar .dropdown ul a {
-  padding: 10px 20px;
-  font-size: 14px;
-}
-
-.navbar .dropdown ul a i {
-  font-size: 12px;
-}
-
-.navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: #1a91ce;
-}
-
-.navbar .dropdown:hover > ul {
-  opacity: 1;
-  top: 100%;
-  visibility: visible;
-}
-
-.navbar .dropdown .dropdown ul {
-  top: 0;
-  left: calc(100% - 30px);
-  visibility: hidden;
-}
-
-.navbar .dropdown .dropdown:hover > ul {
-  opacity: 1;
-  top: 0;
-  left: 100%;
-  visibility: visible;
-}
-
-@media (max-width: 1366px) {
-  .navbar .dropdown .dropdown ul {
-    left: -90%;
-  }
-  .navbar .dropdown .dropdown:hover > ul {
-    left: -100%;
-  }
-}
-
-
-
-/
-.mobile-nav-toggle {
-  color: #222222;
-  font-size: 28px;
-  cursor: pointer;
-  display: none;
-  line-height: 0;
-  transition: 0.5s;
-}
-
-.mobile-nav-toggle.bi-x {
-  color: #1a91ce;
-}
-
-@media (max-width: 991px) {
-  .mobile-nav-toggle {
-    display: block;
-  }
-  .navbar ul {
-    display: none;
-  }
-}
-
-.navbar-mobile {
-  position: fixed;
-  overflow: hidden;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background: #555555;
-  transition: 0.3s;
-  z-index: 999;
-}
-
-.navbar-mobile .mobile-nav-toggle {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-}
-
-.navbar-mobile ul {
-  display: block;
-  position: absolute;
-  top: 55px;
-  right: 15px;
-  bottom: 15px;
-  left: 15px;
-  padding: 10px 0;
-  border-radius: 8px;
-  background-color: #1a91ce;
-  overflow-y: auto;
-  transition: 0.3s;
-}
-
-.navbar-mobile a {
-  padding: 10px 20px;
-  font-size: 15px;
-  color: #222222;
-}
-
-.navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #1a91ce;
-}
-
-.navbar-mobile .getstarted {
-  margin: 15px;
-}
-
-.navbar-mobile .dropdown ul {
-  position: static;
-  display: none;
-  margin: 10px 20px;
-  padding: 10px 0;
-  z-index: 99;
-  opacity: 1;
-  visibility: visible;
-  background: #1a91ce;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-}
-
-.navbar-mobile .dropdown ul li {
-  min-width: 200px;
-}
-
-.navbar-mobile .dropdown ul a {
-  padding: 10px 20px;
-}
-
-.navbar-mobile .dropdown ul a i {
-  font-size: 12px;
-}
-
-.navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
-  color: #1a91ce;
-}
-
-.navbar-mobile .dropdown > .dropdown-active {
-  display: block;
-}
-
-
-
-/
-#hero {
-  width: 100%;
-  height: 70vh;
-  margin-top: 70px;
-}
-
-#hero h1 {
-  margin: 0 0 10px 0;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 56px;
-  color:353535;
-}
-
-#hero h2 {
-  color: #353535;
-  margin-bottom: 50px;
-  font-size: 24px;
-}
-
-#hero .btn-get-started {
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 10px 30px;
-  border-radius: 50px;
-  transition: 0.5s;
-  color: #1a91ce;
-  border: 2px solid #1a91ce;
-}
-
-#hero .btn-get-started:hover {
-  background: #1a91ce;
-  color: #fff;
-}
-
-#hero .animated {
-  animation: up-down 2s ease-in-out infinite alternate-reverse both;
-}
-
-@media (min-width: 1024px) {
-  #hero {
-    background-attachment: fixed;
-  }
-}
-
-@media (max-width: 991px) {
-  #hero {
-    height: 100vh;
-  }
-  #hero .animated {
-    -webkit-animation: none;
-    animation: none;
-  }
-  #hero .hero-img {
-    text-align: center;
-  }
-  #hero .hero-img img {
-    width: 50%;
-  }
-}
-
-@media (max-width: 768px) {
-  #hero {
-    margin-top: 20px;
-  }
-  #hero h1 {
-    font-size: 28px;
-    line-height: 36px;
-  }
-  #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 30px;
-  }
-  #hero .hero-img img {
-    width: 70%;
-  }
-}
-
-@media (max-width: 575px) {
-  #hero .hero-img img {
-    width: 80%;
-  }
-}
-
-@-webkit-keyframes up-down {
-  0% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(-10px);
-  }
-}
-
-@keyframes up-down {
-  0% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(-10px);
-  }
-}
-
-
-
-section {
-  padding: 60px 0;
-  overflow: hidden;
-}
-
-.section-bg {
-  background-color: #353535;
-}
-
-.section-title {
-  text-align: center;
-  padding-bottom: 30px;
-}
-
-.section-title h2 {
-  font-size: 32px;
-  font-weight: bold;
-  text-transform: uppercase;
-  position: relative;
-  color: #353535;
-}
-
-.section-title h2::before, .section-title h2::after {
-  content: '';
-  width: 50px;
-  height: 2px;
-  background: #1a91ce;
-  display: inline-block;
-}
-
-.section-title h2::before {
-  margin: 0 15px 10px 0;
-}
-
-.section-title h2::after {
-  margin: 0 0 10px 15px;
-}
-
-.section-title p {
-  margin: 15px 0 0 0;
-}
-
-
-
-
-
-.pricing .box {
-  padding: 20px;
-  background: #fff;
-  text-align: center;
-  border-radius: 8px;
-  position: relative;
-  overflow: hidden;
-  border: 2px solid #353535;
-}
-
-.pricing .box h3 {
-  font-weight: 400;
-  padding: 15px;
-  margin-top: 15px;
-  font-size: 18px;
-  font-weight: 600;
-  color: #353535;
-}
-
-.pricing .box h4 {
-  font-size: 42px;
-  color: #1a91ce;
-  font-weight: 500;
-  font-family: "Open Sans", sans-serif;
-  margin-bottom: 20px;
-}
-
-.pricing .box h4 sup {
-  font-size: 20px;
-  top: -15px;
-  left: -3px;
-}
-
-.pricing .box h4 span {
-  color: #353535;
-  font-size: 16px;
-  font-weight: 300;
-}
-
-.pricing .box ul {
-  padding: 0;
-  list-style: none;
-  color: #353535;
-  text-align: center;
-  line-height: 20px;
-  font-size: 14px;
-}
-
-.pricing .box ul li {
-  padding-bottom: 16px;
-}
-
-.pricing .box ul i {
-  color: #1a91ce;
-  font-size: 18px;
-  padding-right: 4px;
-}
-
-.pricing .box ul .na {
-  color: #ccc;
-  text-decoration: line-through;
-}
-
-.pricing .box .btn-wrap {
-  padding: 15px;
-  text-align: center;
-}
-
-.pricing .box .btn-buy {
-  display: inline-block;
-  padding: 10px 40px 12px 40px;
-  border-radius: 50px;
-  border: 2px solid #1a91ce;
-  color: #1a91ce;
-  font-size: 14px;
-  font-weight: 400;
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-  transition: 0.3s;
-}.pricing .box { border-color: #1a91ce; }
-
-.pricing .box .btn-buy:hover {
-  background: #1a91ce;
-  color: #fff;
-}
-
-.pricing .recommended {
-  border-color: #1a91ce;
-}
-
-.pricing .recommended .btn-buy {
-  background: #1a91ce;
-  color: #fff;
-}
-
-.pricing .recommended .btn-buy:hover {
-  background: #2383c4;
-  border-color: #2383c4;
-}
-
-}
-
-
-.contact .contact-about h3 {
-  font-size: 28px;
-  margin: 0 0 10px 0;
-  padding: 0;
-  line-height: 1;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: #222222;
-}
-
-.contact .contact-about p {
-  font-size: 14px;
-  line-height: 24px;
-  font-family: "Raleway", sans-serif;
-  color: #444444;
-}
-
-.contact .social-links {
-  padding-bottom: 20px;
-}
-
-.contact .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background: #1a91ce;
-  color: #1a91ce;
-  line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
-  border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
-  border: 1px solid #1a91ce;
-}
-
-.contact .social-links a:hover {
-  background: #1a91ce;
-  color: #1a91ce;
-}
-
-.contact .info {
-  color: #444444;
-}
-
-.contact .info i {
-  font-size: 32px;
-  color: #1a91ce;
-  float: left;
-  line-height: 1;
-}
-
-.contact .info p {
-  padding: 0 0 10px 42px;
-  line-height: 28px;
-  font-size: 14px;
-}
-
-.contact .php-email-form .error-message {
-  display: none;
-  color: #444444;
-  background: #ed3c0d;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .error-message br + br {
-  margin-top: 25px;
-}
-
-.contact .php-email-form .sent-message {
-  display: none;
-  color: #1a91ce;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .loading {
-  display: none;
-  background: #1a91ce;
-  text-align: center;
-  padding: 15px;
-}
-
-.contact .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  -webkit-animation: animate-loading 1s linear infinite;
-  animation: animate-loading 1s linear infinite;
-}
-
-.contact .php-email-form .form-group {
-  margin-bottom: 20px;
-}
-
-.contact .php-email-form input, .contact .php-email-form textarea {
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 14px;
-  padding: 10px 15px;
-}
-
-.contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
-  border-color: #1a91ce;
-}
-
-
-
-.contact .php-email-form button[type="submit"] {
-  background: #3498db;
-  border: 0;
-  padding: 10px 24px;
-  color: #fff;
-  transition: 0.4s;
-  border-radius: 50px;
-}
-
-.contact .php-email-form button[type="submit"]:hover {
-  background: #2383c4;
-}
-
-@-webkit-keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-#footer {
-  background: #fff;
-  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
-  padding: 30px 0;
-  color: #353535;
-  font-size: 14px;
-}
-
-#footer .credits {
-  font-size: 13px;
-  padding-top: 5px;
-  color: #353535;
-}
-
-#footer .footer-links a {
-  color: #353535;
-  padding-left: 15px;
-}
-
-#footer .footer-links a:first-child {
-  padding-left: 0;
-}
-
-#footer .footer-links a:hover {
-  color: #353535;
-}
-
-
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+<title>ALL CONNECT - SITE OFFICIEL</title>
+<meta content="" name="description">
+<meta content="" name="keywords">
+
+<link href="assets/img/favicon.png" rel="icon">
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+<link href="assets/vendor/aos/aos.css" rel="stylesheet">
+<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+<link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+<link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<section id="hero" class="d-flex align-items-center">
+
+<div class="container">
+<div class="row">
+<div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+<h1 data-aos="fade-up">ALL CONNECT</h1>
+<h2 data-aos="fade-up" data-aos-delay="400">Au plaisir d'être connecté.</h2>
+<div data-aos="fade-up" data-aos-delay="800">
+<a href="#contact" class="btn-get-started scrolltobottom">Contactez-nous par e-mail.</a>
+</div>
+</div>
+<div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
+<img src="assets/hero-img.png" class="img-fluid animated" alt="">
+</div>
+</div>
+</div>
+
+</section>
+
+<main id="main">
+
+<section id="pricing" class="pricing">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Tarifs</h2>
+          <p> </p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="box" data-aos="zoom-in-right" data-aos-delay="200">
+              <h3>Montage</h3>
+              <h4><sup>€</sup>100<span></span></h4>
+              <ul>
+                <li>Processeur</li>
+                <li>Carte graphique</li>
+                <li>Carte mère</li>
+                <li>Mémoire</li>
+                <li>Stockage</li>
+                <li>Alimentation</li>
+
+              </ul>
+              <div class="btn-wrap">
+                <a href="#contact" class="btn-buy">DEMANDER</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
+            <div class="box recommended" data-aos="zoom-in" data-aos-delay="100">
+              <h3>Dépannage</h3>
+              <h4><sup>€</sup>50<span></span></h4>
+              <ul>
+                <li></li>
+
+              </ul>
+              <div class="btn-wrap">
+                <a href="#contact" class="btn-buy">ACCEPTER</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+            <div class="box" data-aos="zoom-in-left" data-aos-delay="200">
+              <h3>Vente</h3>
+              <h4><sup>€</sup>500<span></span></h4>
+              <ul>
+                <li>(CPU) AMD RYZEN 5 2600</li>
+                <li>(GPU) AMD RX 590</li>
+                <li>(CM) MSI B450</li>
+                <li>(RAM) CORSAIR 2x4GB</li>
+                <li>(SSD) CORSAIR 240GB</li>
+                <li>(ALM) CORSAIR 550W</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#contact" class="btn-buy">COMMANDER</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Informations</h2>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="contact-about">
+              <h3>ALL CONNECT</h3>
+              <p>Une entreprise qui effectue des montages, des réparations et des ventes d'ordinateurs dans les meilleurs délais. Au service des particuliers et des professionnels, nous intervenons sur Heuchin et ses environs. Nous vous garantissons des prestations aux prix les plus bas et nous assurons nos interventions du lundi au vendredi de 8h à 16h.</p>
+
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="info">
+
+
+              <div>
+                <i class="ri-mail-send-line"></i>
+                <p>all@connect.net</p>
+              </div>
+
+              <div>
+                <i class="ri-phone-line"></i>
+                <p>07.49.46.59.13</p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-5 col-md-12" data-aos="fade-up" data-aos-delay="300">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Votre nom" required>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Votre e-mail" required>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Votre demande" required>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" placeholder="Votre message" required></textarea>
+              </div>
+<div class="my-3">
+<div class="loading">Chargement</div>
+<div class="error-message">Erreur</div>
+<div class="sent-message">Rédiger votre message</div>
+</div>
+<div class="text-center"><button type="submit">Envoyer</button></div>
+</form>
+
+</div>
+
+</section>
+
+</main>
+
+<footer id="footer">
+    <div class="container">
+      <div class="row d-flex align-items-center">
+        <div class="col-lg-6 text-lg-left text-center">
+          <div class="copyright">
+            <strong>ALL CONNECT</strong> a été créer et éditer par <strong>HACHIN Julien</strong>.
+         </div> 
+    </div>
+  </footer>
+
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+<script src="assets/vendor/purecounter/purecounter.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
