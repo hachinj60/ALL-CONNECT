@@ -5,12 +5,12 @@ body {
 }
 
 a {
-  color: #008000;
+  color: #1a91ce0;
   text-decoration: none;
 }
 
 a:hover {
-  color: #008000;
+  color: #1a91ce0;
   text-decoration: none;
 }
 
@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #008000;
+  background: #1a91ce0;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .back-to-top:hover {
   background: #353535;
-  color: #008000;
+  color: #1a91ce0;
 }
 
 .back-to-top.active {
@@ -85,19 +85,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar a:hover, .navbar .active, .navbar li:hover > a {
-  color: #008000;
+  color: #1a91ce0;
 }
 
 .navbar .getstarted {
-  background: #008000;
+  background: #1a91ce0;
   padding: 8px 25px;
   margin-left: 30px;
   border-radius: 50px;
-  color: #008000;
+  color: #1a91ce0;
 }
 
 .navbar .getstarted:hover {
-  color: #008000;
+  color: #1a91ce0;
   background: #353535;
 }
 
@@ -111,7 +111,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: #008000;
+  background: #1a91ce0;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
   border-radius: 4px;
@@ -131,7 +131,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: #008000;
+  color: #1a91ce0;
 }
 
 .navbar .dropdown:hover > ul {
@@ -175,7 +175,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav-toggle.bi-x {
-  color: #008000;
+  color: #1a91ce0;
 }
 
 @media (max-width: 991px) {
@@ -214,7 +214,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 15px;
   padding: 10px 0;
   border-radius: 8px;
-  background-color: #008000;
+  background-color: #1a91ce0;
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -226,7 +226,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #008000;
+  color: #1a91ce0;
 }
 
 .navbar-mobile .getstarted {
@@ -241,7 +241,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 99;
   opacity: 1;
   visibility: visible;
-  background: #008000;
+  background: #1a91ce0;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 }
 
@@ -258,7 +258,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
-  color: #008000;
+  color: #1a91ce0;
 }
 
 .navbar-mobile .dropdown > .dropdown-active {
@@ -297,12 +297,12 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 30px;
   border-radius: 50px;
   transition: 0.5s;
-  color: #008000;
-  border: 2px solid #008000;
+  color: #1a91ce0;
+  border: 2px solid #1a91ce0;
 }
 
 #hero .btn-get-started:hover {
-  background: #008000;
+  background: #1a91ce0;
   color: #fff;
 }
 
@@ -402,7 +402,7 @@ section {
   content: '';
   width: 50px;
   height: 2px;
-  background: #008000;
+  background: #1a91ce0;
   display: inline-block;
 }
 
@@ -443,7 +443,7 @@ section {
 
 .pricing .box h4 {
   font-size: 42px;
-  color: #008000;
+  color: #1a91ce0;
   font-weight: 500;
   font-family: "Open Sans", sans-serif;
   margin-bottom: 20px;
@@ -475,7 +475,7 @@ section {
 }
 
 .pricing .box ul i {
-  color: #008000;
+  color: #1a91ce0;
   font-size: 18px;
   padding-right: 4px;
 }
@@ -494,26 +494,26 @@ section {
   display: inline-block;
   padding: 10px 40px 12px 40px;
   border-radius: 50px;
-  border: 2px solid #008000;
-  color: #008000;
+  border: 2px solid #1a91ce0;
+  color: #1a91ce0;
   font-size: 14px;
   font-weight: 400;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   transition: 0.3s;
-}.pricing .box { border-color: #008000; }
+}.pricing .box { border-color: #1a91ce0; }
 
 .pricing .box .btn-buy:hover {
-  background: #008000;
+  background: #1a91ce0;
   color: #fff;
 }
 
 .pricing .recommended {
-  border-color: #008000;
+  border-color: #1a91ce0;
 }
 
 .pricing .recommended .btn-buy {
-  background: #008000;
+  background: #1a91ce0;
   color: #fff;
 }
 
@@ -549,8 +549,8 @@ section {
 .contact .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #008000;
-  color: #008000;
+  background: #1a91ce0;
+  color: #1a91ce0;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -559,12 +559,12 @@ section {
   width: 36px;
   height: 36px;
   transition: 0.3s;
-  border: 1px solid #008000;
+  border: 1px solid #1a91ce0;
 }
 
 .contact .social-links a:hover {
-  background: #008000;
-  color: #008000;
+  background: #1a91ce0;
+  color: #1a91ce0;
 }
 
 .contact .info {
@@ -573,7 +573,7 @@ section {
 
 .contact .info i {
   font-size: 32px;
-  color: #008000;
+  color: #1a91ce0;
   float: left;
   line-height: 1;
 }
@@ -599,7 +599,7 @@ section {
 
 .contact .php-email-form .sent-message {
   display: none;
-  color: #008000;
+  color: #1a91ce0;
   background: #18d26e;
   text-align: center;
   padding: 15px;
@@ -608,7 +608,7 @@ section {
 
 .contact .php-email-form .loading {
   display: none;
-  background: #008000;
+  background: #1a91ce0;
   text-align: center;
   padding: 15px;
 }
@@ -638,7 +638,7 @@ section {
 }
 
 .contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
-  border-color: #008000;
+  border-color: #1a91ce0;
 }
 
 
