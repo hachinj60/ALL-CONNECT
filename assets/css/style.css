@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .back-to-top:hover {
   background: #353535;
-  color: #1a91ce;
+  color: #008000;
 }
 
 .back-to-top.active {
@@ -89,7 +89,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar .getstarted {
-  background: #1a91ce;
+  background: #008000;
   padding: 8px 25px;
   margin-left: 30px;
   border-radius: 50px;
@@ -97,7 +97,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar .getstarted:hover {
-  color: #1a91ce;
+  color: #008000;
   background: #353535;
 }
 
@@ -258,7 +258,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
-  color: #1a91ce;
+  color: #008000;
 }
 
 .navbar-mobile .dropdown > .dropdown-active {
@@ -298,7 +298,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50px;
   transition: 0.5s;
   color: #008000;
-  border: 2px solid #1a91ce;
+  border: 2px solid #008000;
 }
 
 #hero .btn-get-started:hover {
@@ -495,13 +495,13 @@ section {
   padding: 10px 40px 12px 40px;
   border-radius: 50px;
   border: 2px solid #008000;
-  color: #1a91ce;
+  color: #008000;
   font-size: 14px;
   font-weight: 400;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   transition: 0.3s;
-}.pricing .box { border-color: #1a91ce; }
+}.pricing .box { border-color: #008000; }
 
 .pricing .box .btn-buy:hover {
   background: #008000;
@@ -550,7 +550,7 @@ section {
   font-size: 18px;
   display: inline-block;
   background: #008000;
-  color: #1a91ce;
+  color: #008000;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -559,12 +559,12 @@ section {
   width: 36px;
   height: 36px;
   transition: 0.3s;
-  border: 1px solid #1a91ce;
+  border: 1px solid #008000;
 }
 
 .contact .social-links a:hover {
   background: #008000;
-  color: #1a91ce;
+  color: #008000;
 }
 
 .contact .info {
