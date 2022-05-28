@@ -78,7 +78,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
 }
 
-.navbar a i { 
+.navbar a i {
   font-size: 12px;
   line-height: 0;
   margin-left: 5px;
@@ -599,7 +599,7 @@ section {
 
 .contact .php-email-form .sent-message {
   display: none;
-  color: ##008000;
+  color: #008000;
   background: #18d26e;
   text-align: center;
   padding: 15px;
@@ -638,7 +638,7 @@ section {
 }
 
 .contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
-  border-color: ##008000;
+  border-color: #008000;
 }
 
 
